@@ -5,7 +5,7 @@
     </div>
     <div>
       <img
-        src="github-mark.png"
+        src="/github-mark.png"
         alt="Github Mark"
         class="header-social-logo"
         @click="toGithubRep"

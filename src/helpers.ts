@@ -98,7 +98,8 @@ export const formatSeconds = (totalSeconds: number) => {
     .join(":");
 };
 
-export const formatDate = (date: string) => {
+export const formatDate = (date?: string) => {
+  if (!date) { return; }
   const dateObj = new Date(date);
   return dateObj.toLocaleDateString([], {
     month: 'short',

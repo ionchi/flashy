@@ -28,7 +28,7 @@
           ]"
           class="p-3 text-slate-500"
         >
-          {{ formatDate(game.date) }}
+          {{ formatDate(game?.date) }}
         </td>
         <td
           :class="[
@@ -37,7 +37,7 @@
           ]"
           class="p-3 text-slate-500"
         >
-          {{ game.difficulty.value }}
+          {{ game.difficulty?.value || '-' }}
         </td>
         <td
           :class="[

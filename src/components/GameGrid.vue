@@ -39,7 +39,7 @@
     >
       <flash-card
         v-for="(cell, cellIndex) in row"
-        :key="cell"
+        :key="cell.value + cellIndex"
         :class="[
           cellIndex < row.length - 1 && 'mr-2 lg:mr-5',
         ]"
@@ -265,7 +265,7 @@ const startFromSettings = () => {
 </script>
 
 <style scoped lang="scss">
-$size: v-bind('gameDifficulty.size');
+$size: v-bind('gameDifficulty?.size');
 $cellWidth: 100px;
 $mobileCellWidth: 50px;
 $smallScreenWidth: 30px;
