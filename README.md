@@ -6,6 +6,10 @@ Card memory is a game where you have to click on a card to see what image is und
 
 This project was completed as part of a group learning exercise.
 
+## Demo
+
+[https://flashy-flash.netlify.app/](https://flashy-flash.netlify.app/)
+
 ## Main Features
 
 ### Game setting
